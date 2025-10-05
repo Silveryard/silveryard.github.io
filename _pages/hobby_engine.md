@@ -48,7 +48,7 @@ Mesh shaders help with high poly geometry by allowing more forms of culling to r
 - Backface cone culling
 - HZB occlusion culling
 
-As the last one needs a finished Z-Buffer, this pass is not enabled in the DepthPrePass or shadow passes. AS the DepthPrePass renders out quite a few other render targets, it might make sense to render big occluders to a separate occlusion buffer that can be used in the DepthPrePass. This is a topic for the future.
+As the last one needs a finished Z-Buffer, this pass is not enabled in the DepthPrePass or shadow passes. As the DepthPrePass renders out quite a few other render targets, it might make sense to render big occluders to a separate occlusion buffer that can be used in the DepthPrePass. This is a topic for the future.
 
 Aside from culling, mesh shaders open up another optimization possibility: Nanite style hierarchical cluster LODs ([Link](https://advances.realtimerendering.com/s2021/Karis_Nanite_SIGGRAPH_Advances_2021_final.pdf)). I have no intention to implement the full Nanite pipeline as this is just way to much for a single person in my spare time.
 But this engine uses a (clustered) forward renderer, so there are major performance concerns regarding quad overdraw when using high poly count meshes. Hierarchical LODs would be one way of ensuring more consistent triangle sizes in order to reduce quad overdraw at least somewhat. LOD support is currently WIP but mesh shading serves as an important foundation for this feature.
