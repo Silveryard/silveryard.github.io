@@ -8,7 +8,7 @@ title: About
 
 Hi, I'm Sebastian.
 
-I am a programmer with a decade of experience in the GameDev industry. My main focuses are tools, rendering and optimization. I am currently employed as Tech Lead at HandyGames Studios ([Link](https://www.handy-games.com)).
+I am a programmer with a decade of experience in the GameDev industry. My main focuses are tools, rendering, and optimization. I am currently employed as Tech Lead at HandyGames Studios ([Link](https://www.handy-games.com)).
 
 Projects, I've worked on: [Games]({{ site.baseurl }}{% link _pages/shipped_titles.md %})
 
