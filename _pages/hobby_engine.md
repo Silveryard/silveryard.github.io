@@ -27,8 +27,8 @@ Given my original motivation, the engine borrows many design aspects from Unity 
 Giving a full rundown of all features would make this page way too long, so I will give a few short general points and then showcase some rendering effects for some pretty (and mostly still WIP) pictures.
 
 - Custom reflection system based on libclang/cppast ([Link](https://github.com/standardese/cppast)). Cppast is discontinued, but I still keep it around as it (mostly) serves its needs. The reflection system is similar to Unreals, but it uses C++ attributes instead of macros and has support for custom attributes like C# has
-- Garbage collection. I went with the classical bdwgd ([Link](https://github.com/bdwgc/bdwgc))
-- Fiber-based multi-threading. This uses boost fibers ([Link](https://www.boost.org/doc/libs/1_75_0/libs/fiber/doc/html/index.html)), although I am not super happy with its stack management. It allocates on fiber creation, not on first fiber execution, which becomes somewhat of a hassle when considering that fiber stacks need to be GC allocated memory
+- Garbage collection. I went with the classical bdwgc ([Link](https://github.com/bdwgc/bdwgc))
+- Fiber-based multi-threading. This uses boost fibers ([Link](https://www.boost.org/doc/libs/1_75_0/libs/fiber/doc/html/index.html)), although I am not super happy with its stack management. It allocates on fiber creation, not on first fiber execution, which becomes somewhat of a hassle when considering that fiber stacks need to be GC allocated memory, and that a huge number of fibers might be spawned when loading many assets at once, like during scene loading
 - Unreal like module system but with CMake ([Link](https://cmake.org)) instead of a custom build tool
 - The asset database is a mix of Unity and Unreal. It's mainly based on IDs like Unity, so renaming/moving assets is quick and easy. But it uses Unreal-style paths. The asset database is also not editor only. Unlike in Unity, you can load any (included) asset at runtime both by its path and by its asset ID. No need for AssetBundles or a specific Resources folder
 - Editor UI uses Dear ImGui ([Link](https://github.com/ocornut/imgui))
