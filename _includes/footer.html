@@ -32,6 +32,7 @@
 
   </div>
 
+  {% if jekyll.environment != "development" %}
   <script>
     var img = document.createElement("img");
     var rnd = Math.random() * (10000000 - 1000) + 1000;
@@ -42,5 +43,6 @@
   <noscript>
     <img src="https://silveryard.goatcounter.com/count?p={{ page.url | uri_escape }}&t={{ page.title | uri_esacpe}}" style="display:none;">
   </noscript>
+  {% endif %}
 
 </footer>
