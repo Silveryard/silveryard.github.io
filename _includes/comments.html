@@ -1,8 +1,23 @@
-<script data-isso="https://isso.silveryard.net/"
-                data-isso-avatar="true"
-                data-isso-vote="true"               
-                data-isso-vote-levels="-5,5"
-                src="https://isso.silveryard.net/js/embed.min.js"></script>
-<section id="isso-thread">
-    <noscript>Javascript needs to be activated to view comments.</noscript>
-</section>
+<div style="max-width: 80%;">
+    <h3>Comments</h3>
+    <script data-isso="https://isso.silveryard.net/"
+                    data-isso-avatar="true"
+                    data-isso-vote="true"               
+                    data-isso-vote-levels="-5,5"
+                    src="https://isso.silveryard.net/js/embed.min.js"></script>
+    <!--https://djangocas.dev/blog/hugo/isso-static-blog-comments-setup-and-internal/#add-comments-to-hugo-->
+    <style>
+        .isso-postbox {
+        margin: 0 !important;
+        max-width: none !important;
+        }
+
+        #isso-root .isso-comment {
+        max-width: none !important;
+        margin: 0 !important;
+        }
+    </style>
+    <section id="isso-thread">
+        <noscript>Javascript needs to be activated to view comments.</noscript>
+    </section>
+</div>
