@@ -94,3 +94,5 @@ This is definitely not finished yet, and there are quite a few artifacts that st
     <img src="{{ site.baseurl }}/assets/img/engine/RTGI3.webp" width="49%">
 </p>
 *Different debug modes for RTGI*
+
+{% include comments.html %}
