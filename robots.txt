@@ -1,0 +1,8 @@
+---
+layout: null
+sitemap: false
+---
+Sitemap: https://silveryard.net/sitemap.xml
+
+User-agent: facebookexternalhit
+Allow: /
