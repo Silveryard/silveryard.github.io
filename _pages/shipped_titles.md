@@ -7,7 +7,7 @@ assisted_image_size: 250
 ---
 
 All work on the titles mentioned on this page was done as part of my previous position at HandyGames
-<img src="{{ site.baseurl }}/assets/img/logos/company_handygames.png" width="50">
+<img src="{{ site.baseurl }}/assets/img/logos/company_handygames.png" width="30">
 ([Link](https://www.handy-games.com))
 
 ## Clouds & Sheep 2

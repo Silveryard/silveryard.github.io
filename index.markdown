@@ -8,7 +8,22 @@ title: About
 
 Hi, I'm Sebastian.
 
-I am a programmer with a decade of experience in the GameDev industry. My main focuses are tools, rendering, and optimization. I previously was employed as Tech Lead at HandyGames Studios ([Link](https://www.handy-games.com)).
+I am a programmer with a decade of experience in the GameDev industry. My main focuses are tools, rendering, and optimization. 
+
+Currently working as MTS Software Development Engineer at AMD 
+<img src="{{ site.baseurl }}/assets/img/logos/company_amd.png" width="30">
+([Link](https://www.amd.com)).
+
+Previous Positions: 
+- Tech Lead at HandyGames 
+<img src="{{ site.baseurl }}/assets/img/logos/company_handygames.png" width="30">
+([Link](https://www.handy-games.com)) (2023-2026)
+- Programmer at HandyGames 
+<img src="{{ site.baseurl }}/assets/img/logos/company_handygames.png" width="30">
+([Link](https://www.handy-games.com)) (2018-2023)
+- Software Engineer (Apprenticeship) at HandyGames 
+<img src="{{ site.baseurl }}/assets/img/logos/company_handygames.png" width="30">
+([Link](https://www.handy-games.com)) (2015-2018)
 
 Projects, I've worked on: [Games]({{ site.baseurl }}{% link _pages/shipped_titles.md %})
 
